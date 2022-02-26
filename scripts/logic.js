@@ -29,8 +29,8 @@ function initilizeScript(){
     screen.onmouseup  = () =>{brush.actived = false, console.log(brush)};
    
     screen.onmousemove = (event) =>{
-        brush.pos.x = event.clientX - 250;
-        brush.pos.y = event.clientY - 100;
+        brush.pos.x = event.clientX;
+        brush.pos.y = event.clientY;
         brush.moving = true;
     }
 
